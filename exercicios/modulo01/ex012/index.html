@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado emmeu próprio servidor.</p>
+    <video width="560" poster="imagens/limoes-capa.png" controls>
+        <source src="midias/meu-video.mp4" type="video/mp4">
+        <source src="midias/meu-video.m4v" type="video/mp4">
+        <source src="midias/meu-video.webm" type="video/webm">
+        <source src="midias/meu-video.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Qo4dxCYjfQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p><a href="https://www.youtube.com/embed/Qo4dxCYjfQA">Acesse esse vídeo diretamente pelo YouTube</a></p>
+
+    <p>Para inserir videos do Vimeo, é pago, mas é melhor, pois é mais fluido do que o YouTube e é privado. Já o YouTube, quando você pausa, aparece outros videos aleatorios na tela. Já os videos internos, consomem a memória/banda do seu site.</p>
+</body>
+</html>
+
+<!-- TAG VIDEOS OCUPA MUITO MEMORIA E ISSO FAZ COM QUE GASTA MAIS BANDA E DINHEIRO -->

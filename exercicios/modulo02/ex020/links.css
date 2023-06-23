@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/*  SELETORES PERSONALIZADOS
+    #  = id
+    .  = class
+    :  = pseudo-class
+    :: = pseudo-element
+    >  = children
+*/
+
+body {
+    background-image: linear-gradient(to right, #062280, #0a37cc);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover { /* QUANDO EU ESTIVER COM O MOUSE SOB O ELEMENTO */
+    text-decoration: underline;
+    color: black;
+}
+
+a:active { /* QUANDO O ELEMENTO ESTIVER ATIVO (AO APERTAR OU SEGURAR COM O MOUSE) */
+    color: blue;
+}
+
+.especial::before {
+    content: "⇒ ";
+    text-decoration: none;
+    font-weight: normal;
+    color: darkgray;
+}
+
+.especial::after {
+    content: " ⇐";
+    text-decoration: none;
+    font-weight: normal;
+    color: darkgray;
+}
+/* a:visited { -- QUANDO O LINK JA FOI VISITADO
+    color: darkblue;
+} */
