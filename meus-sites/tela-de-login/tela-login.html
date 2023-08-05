@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="tela-login.css">
+</head>
+<body>
+    <div>
+        <h1>Login</h1>
+        <input type="text" placeholder="Nome" id="nome">
+        <br><br>
+        <input type="password" placeholder="Senha" id="senha">
+        <br><br>
+        <input type="submit" onclick="logar(); return false">
+    </div>
+
+    <script>
+        function logar() {
+            var nome = document.getElementById('nome').value;
+            var senha = document.getElementById('senha').value;
+
+            if(nome == "admin" && senha == "0000"){
+                location.href = "principal.html";
+            } else {
+                alert('Nome ou senha não autorizado!')
+            }
+        }
+    </script>
+
+</body>
+</html>

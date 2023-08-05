@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: Consola;
+    src: url(fonts/ConsolaMono-Book.ttf) format(truetype);
+}
+
+:root {
+    --cor0: #c5c8eb;
+    --cor1: #143266;
+    --cor2: #75A0EA;
+    --cor3: #2E71E6;
+    --cor4: #314466;
+    --cor5: #2458B3;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    padding: 40px 0px 80px;
+    position: relative;
+}
+
+header > h1 {
+    font-family: 'Bebas Neue';
+    font-weight: lighter;
+    font-size: 3em;
+
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.404);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header h1:hover {
+    font-size: 3.1em;
+    transition-duration: .2s;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    padding: 10px;
+    background-color: var(--cor5);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.541);
+}
+
+nav a {
+    padding: 10px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.521);
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.518);
+    color: var(--cor0);
+    border-radius: 3px;
+    transition-duration: .3s;
+    padding: 10px;
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.411);
+}
+
+main p {
+    text-align: justify;
+}
